@@ -3,3 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  p myself pranay kumar
+  - var btnType = 'info'
+  - var btnsize = 'lg'
+  button(type='button' class=`btn btn-${btnType}` ) Press Me
