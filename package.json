@@ -16,5 +16,14 @@
   "main": "app.js",
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "I am pranay kumar pavuluri",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PPAVULURI3579/s2wb59pavuluri.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PPAVULURI3579/s2wb59pavuluri/issues"
+  },
+  "homepage": "https://github.com/PPAVULURI3579/s2wb59pavuluri#readme"
 }
