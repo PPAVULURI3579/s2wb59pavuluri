@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var AeroplaneRouter = require('./routes/Aeroplane');
+var AeroplaneRouter = require('./routes/aeroplane');
 var addmodsRouter = require('./routes/addmods');
 var selectorRouter = require('./routes/selector');
 
@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/Aeroplane', AeroplaneRouter);
+app.use('/aeroplane', AeroplaneRouter);
 app.use('/addmods', addmodsRouter);
 app.use('/selector', selectorRouter);
 
