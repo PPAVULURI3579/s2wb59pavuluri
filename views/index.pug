@@ -3,3 +3,16 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  p myself pranay kumar
+  - var btnType = 'info'
+  - var btnsize = 'lg'
+  button(type='button' class=`btn btn-${btnType}` onclick="moreClaps()" ) Press Me
+  div(id='target') Clap for me
+
+  script.
+    var clap_count = 0;
+    function moreClaps(){
+      clap_count += 2;
+      document.getElementById("target").innerHTML = `Clap ${clap_count} times.`;
+    }
+  
