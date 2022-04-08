@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}. My name is pranay kumar pavuluri
+  - let results=[{drink_brand:"cococola",drink_color:"Black",drink_cost:"10"},{drink_brand:"pepsi",drink_colour:"red",drink_cost:"17"},{drink_brand:"budweiser",drink_color:"light blue",drink_cost:"20"}]
+  div(class="container-fluid")
+    div(class="row")
+      each drinks, index in results
+        div(class="col-sm-2" onclick=`buy(${index+1})`) #{drinks.drink_brand} - #{drinks.drink_color} - $#{drinks.drink_cost}
+  
+  script.
+    function buy(index){
+      alert(`You purchased item ${index}`);
+    }
